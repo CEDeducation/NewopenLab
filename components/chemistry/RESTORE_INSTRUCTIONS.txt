@@ -1,0 +1,1 @@
+Restore these five files at the matching paths in your existing GitHub OpenLab repository. Do not delete other app files. Keep the folder structure. Commit and check Vercel build logs. This restores only Jr. OpenLab, not the whole app.
