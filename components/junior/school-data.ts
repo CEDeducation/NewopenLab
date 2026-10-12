@@ -44,7 +44,12 @@ const atoms: [string,string][] = [
 ]
 function positions() {
  const map: Record<number,{row:number;col:number}>={}
- const row=(period:number, pairs: [number,number][])=>pairs.forEach(([n,c])=>map[n]={row:period,col:c})
+ 
+const row = (period: number, pairs: number[][]) =>
+  pairs.forEach(([n, c]) => {
+    map[n] = { row: period, col: c }
+  })
+
  row(1,[[1,1],[2,18]])
  row(2,[3,4,5,6,7,8,9,10].map((n,i)=>[n,[1,2,13,14,15,16,17,18][i]]))
  row(3,[11,12,13,14,15,16,17,18].map((n,i)=>[n,[1,2,13,14,15,16,17,18][i]]))
