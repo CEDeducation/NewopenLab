@@ -16,6 +16,7 @@ type SyncStatus = "local" | "syncing" | "synced" | "error"
 
 const routeLabels: Record<string, string> = {
   "/": "Home",
+  "/junior": "Jr. OpenLab",
   "/platform": "Platform",
   "/bioresearch": "Bioresearch",
   "/bioprocess": "Bioprocess",
@@ -128,6 +129,7 @@ export default function Topbar() {
         )}
       </div>
       <div className="topActions">
+        <Link href="/junior" className="juniorNavPill" title="Explore Jr. OpenLab">✦ <span>Jr. OpenLab</span> <b>↗</b></Link>
         <InterfaceLanguage/>
         <Link href="/settings" className={`localBadge syncState-${syncStatus}`}><CloudIcon size={15}/>{statusText}</Link>
         <button className="profileSwitcherButton" onClick={requestProfileSwitch} title="Switch OpenLab profile">

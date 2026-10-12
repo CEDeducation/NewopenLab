@@ -119,6 +119,7 @@ export default function Sidebar() {
       </nav>
 
       <div className="sidebarBottom">
+        <Link href="/junior" className="juniorSidebarLink"><span className="juniorSidebarIcon">✧</span><span><strong>Jr. OpenLab</strong><small>Interactive science • 9–12</small></span><b>↗</b></Link>
         <Link href="/settings" className="sandboxBadge syncBadge"><CloudIcon size={16}/><span>Persistence</span><b>Auto-save enabled</b></Link>
         <div className="demoNotice"><span className="demoDot"/>Research is saved as you work</div>
       </div>

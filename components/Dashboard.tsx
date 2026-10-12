@@ -78,6 +78,8 @@ export default function Dashboard() {
         </div>
       </section>
 
+      <Link href="/junior" className="juniorDashboardBanner"><span className="jdbLogo">✳</span><span><small>INTRODUCING JR. OPENLAB</small><strong>Explore science, don’t just memorize it.</strong><em>Interactive atoms, DNA, light and molecule-building — Classes 9–12</em></span><b>Explore the school lab ↗</b></Link>
+
       <div className="minimalHomeGrid">
         <section className="surfaceCard minimalPanel">
           <div className="minimalPanelHead">
